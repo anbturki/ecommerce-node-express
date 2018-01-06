@@ -1,0 +1,17 @@
+<% layout("poilerplate") -%>
+
+<div class="text-center">
+  <% if (messages.error) { %>
+  <div class="alert alert-danger">
+    <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <strong>Error!</strong>  <%= messages.error[0] %>
+  </div>
+  <% } %>
+  <% if (messages.success) { %>
+    <div class="alert alert-success">
+      <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+      <strong>Success!</strong>  <%= messages.success[0] %>
+    </div>
+    <% } %>          
+<h1>Home Page.</h1>
+</div>

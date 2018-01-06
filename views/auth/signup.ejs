@@ -1,0 +1,30 @@
+<% layout("poilerplate") %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <h1 class="text-center">User SignUp</h1>
+    <% if (messages.error) { %>
+      <div class="alert alert-danger">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <strong>Error!</strong>  <%= messages.error[0] %>
+      </div>
+      <% } %>        
+      <form action="/signup" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" class="form-control" name="email" placeholder="Enter your email">
+        </div>
+        <div class="form-group">
+          <label for="email">Name</label>
+          <input type="text" class="form-control" name="name" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+          <label for="email">Password</label>
+          <input type="password" class="form-control" name="password" placeholder="Enter your password">
+        </div>
+        <button type="submit" class="btn btn-primary">Sign up</button>
+      </form>
+    </div>
+  </div>
+</div>
