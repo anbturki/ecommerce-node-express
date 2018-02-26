@@ -47,8 +47,7 @@ app.use(userRoutes);
 app.use(mainRoutes);
 
 
-// listen to 3000 port and run the server
-app.listen(8080, (err) => {
+app.listen(3000, (err) => {
     if (err) throw err;
-    console.log("Server running on 8080");
+    console.log("Server running on 3000");
 });
